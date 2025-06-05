@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Details</title>
+    <title> Form</title>
     <script>
         function display() {
             let name = txtname1.value;
             let email = txtname2.value;
             let password = txtname3.value;
             dvname.innerHTML = "Name:" + name;
-   
             dvmail.innerHTML = "Email:" + email;
-   
             dvnum.innerHTML = "Password:" + password;
         }
     </script>
 </head>
 <body>
     
-    <h1>Details</h1>
-    <div><h2>Name</h2><input type="text" id="txtname1"></div>
-    <div><h2>Email</h2><input type="text" id="txtname2"></div>
-    <div><h2>Password</h2><input type="text" id="txtname3"></div>
+    <h2>Form</h2>
+    <div><p>Name</p><input type="text" id="txtname1"></div>
+    <div><p>Email</p><input type="text" id="txtname2"></div>
+    <div><p>Password</p><input type="text" id="txtname3"></div>
     <button onclick="display()">Submit</button>
 
-    <div style="display: block;">
+    <div style="display: block">
          <p id="dvname"></p>
          <p id="dvmail"></p>
          <p id="dvnum"></p>
