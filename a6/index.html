@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruits List</title>
+</head>
+<body>
+  <h1>Fruits List</h1>
+  <input type="text" id="fruitInput">
+  <button onclick="addFruit()">Add</button>
+  <ul id="fruitList"></ul>
+
+  <script>
+    const fruits = [];
+
+    function addFruit() {
+      const input = document.getElementById("fruitInput");
+      const fruit = input.value.trim();
+      if (fruit !== "") {
+        fruits.push(fruit);
+        input.value = "";
+        document.getElementById("fruitList").innerHTML = 
+          fruits.map(f => `<li>${f}</li>`).join("");
+      }
+    }
+  </script>
+</body>
+</html>
